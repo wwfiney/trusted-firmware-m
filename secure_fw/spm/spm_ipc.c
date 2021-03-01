@@ -89,6 +89,8 @@ int32_t tfm_spm_validate_conn_handle(psa_handle_t conn_handle,
     if (((struct tfm_conn_handle_t *)conn_handle)->client_id != client_id) {
         return IPC_ERROR_GENERIC;
     }
+  
+  printf("test security check %d\n");
 
     return IPC_SUCCESS;
 }
